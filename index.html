@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out the form below:</p>
+    
+    <form id="reg-form">
+      <div>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      
+      <div>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div>
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="100" required>
+      </div>
+      
+      <div>
+        <label for="dropdown">Select gender:</label>
+        <select name="gender" required >
+          <option value="select one" disabled selected>(select one)</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <option value="prefer not to say">Prefer not to say</option>
+        </select>
+      </div>
+      
+      <div>
+        <label>Select employement status:</label>
+        <br>
+        <input type="radio" name="radioGroup" value="radio1" id="radio1" required> 
+        <label for="radio1">Self-employed </label>
+        <br>
+        <input type="radio" name="radioGroup" value="radio2" id="radio2" required> 
+        <label for="radio2">Unemployed</label>
+        <br>
+        <input type="radio" name="radioGroup" value="radio3" id="radio3" required> 
+        <label for="radio3">Student</label>
+      </div>
+      
+      <div>
+        <label>From where you heard about us ? (select that apply)</label>
+        <br>
+        <input type="checkbox" name="checkboxGroup" value="checkbox1" id="checkbox1">
+        <label for="checkbox1">Social media</label>
+        <br>
+        <input type="checkbox" name="checkboxGroup" value="checkbox2" id="checkbox2">
+        <label for="checkbox2">School/College</label>
+        <br>
+        <input type="checkbox" name="checkboxGroup" value="checkbox3" id="checkbox3">
+        <label for="checkbox3">Friend</label>
+        <br>
+        <input type="checkbox" name="checkboxGroup" value="checkbox4" id="checkbox4">
+        <label for="checkbox4">Other</label>
+      </div>
+      <div>
+        <input type="checkbox" id="terms-checkbox" required>
+        <label for="terms-checkbox">I agree to the <a href="#">Terms and Conditions</a></label>
+      </div>
+      <button type="submit" id="submit">Register</button>
+    </form>
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <p>Registered successfully!</p>
+          <button id="popup-ok">OK</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
