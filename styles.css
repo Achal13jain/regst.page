@@ -106,6 +106,7 @@ select {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   background-image: url(2.png);
+  background-repeat: no-repeat; 
   background-size: 50%; 
   background-position: center;}
 
